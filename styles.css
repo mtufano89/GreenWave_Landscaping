@@ -69,59 +69,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 0.75rem;
+  padding-block: 0.25rem;
   gap: 1.5rem;
 }
-
+.logo-img {
+  height: 175px; /* adjustable */
+  width: auto;
+}
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  text-decoration: none;
-  color: var(--green-dark);
+  gap: 0.2rem; /* reduce if needed */
 }
 
-.logo-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  border: 2px solid var(--green-dark);
-  width: 42px;
-  height: 42px;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 1;
-}
-
-.logo-g {
-  margin-right: 1px;
-}
-
-.logo-w {
-  font-size: 1.05rem;
-  transform: translateY(1px);
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.logo-primary {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-.logo-sub {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--text-muted);
-}
 
 /* NAV */
 
