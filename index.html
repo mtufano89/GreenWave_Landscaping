@@ -8,25 +8,28 @@
   <meta name="description" content="GreenWave Landscaping provides residential and light commercial lawn care, landscaping, seasonal clean-ups, planting, mulching, and small hardscape projects in New Haven County." />
   <meta name="keywords" content="landscaping New Haven County, lawn care CT, mulch installation, seasonal clean-ups, shrub trimming, hardscape" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <a id="top"></a>
+
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-<a href="#top" class="logo">
-  <img src="images/logo.png" alt="GreenWave Landscaping logo" class="logo-img">
-</a>
-       
+      <a href="#top" class="logo">
+        <img src="images/logo.png" alt="GreenWave Landscaping logo" class="logo-img" />
+      </a>
 
       <nav class="main-nav" aria-label="Main navigation">
         <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
           <span></span><span></span><span></span>
         </button>
+
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -37,42 +40,46 @@
         </ul>
       </nav>
 
-      <a href="#contact" class="btn btn-primary header-cta">
-        Get a Free Quote
-      </a>
+      <a href="#contact" class="btn btn-primary header-cta">Get a Free Quote</a>
     </div>
   </header>
 
   <main id="home">
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <p class="eyebrow">Residential & Light Commercial Landscaping</p>
-          <h1 id="hero-heading">Landscaping Made Simple, Beautiful, and Reliable.</h1>
-          <p class="hero-subtitle">
-            From lawn care to seasonal clean-ups and custom landscape design,
-            we keep your property looking its best year-round.
-          </p>
+    
+  <!-- HERO -->
+<section class="hero" aria-label="Hero">
+  <video
+    class="hero-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+  >
+    <source src="video/hero_vid.mp4" type="video/mp4" />
+  </video>
 
-          <div class="hero-cta-group">
-            <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-            <a href="#services" class="btn btn-outline">View Services</a>
-          </div>
+  <div class="hero-overlay">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Reliable Landscaping in New Haven County</h1>
+        <p>Lawn care, clean-ups, and landscape improvements done right.</p>
 
-          <div class="hero-badges" aria-label="Key guarantees">
-            <span>✔ Licensed &amp; Insured</span>
-            <span>✔ Reliable Scheduling</span>
-            <span>✔ Satisfaction Guaranteed</span>
-          </div>
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-primary">Request a Free Estimate</a>
+          <a href="#services" class="btn btn-outline">View Services</a>
         </div>
 
-        <div class="hero-image-wrapper">
-          <!-- Replace src with your own lawn/yard hero image -->
-          <img src="images/hero-lawn.jpg" alt="Freshly maintained lawn with clean edging and shrubs" class="hero-image">
+        <div class="hero-badges">
+          <span>✔ Licensed &amp; Insured</span>
+          <span>✔ Reliable Scheduling</span>
+          <span>✔ Satisfaction Guaranteed</span>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- ABOUT -->
     <section id="about" class="section section-about">
@@ -95,6 +102,7 @@
             <li>Clear, honest pricing with no surprises</li>
           </ul>
         </div>
+
         <div class="section-media">
           <div class="card highlight-card">
             <h3>Serving New Haven County</h3>
@@ -121,40 +129,30 @@
         <div class="services-grid">
           <article class="service-card">
             <h3>Lawn Care &amp; Weekly Maintenance</h3>
-            <p>
-              Mowing, trimming, edging, and basic clean-ups to keep your lawn sharp and consistent all season.
-            </p>
-            <p class="service-note">Starting at $XX/week &mdash; pricing varies by property size.</p>
+            <p>Mowing, trimming, edging, and basic clean-ups to keep your lawn sharp and consistent all season.</p>
+            <p class="service-note">Starting at $XX/week. Pricing varies by property size.</p>
           </article>
 
           <article class="service-card">
             <h3>Mulching &amp; Planting</h3>
-            <p>
-              Fresh mulch, seasonal flowers, shrubs, and small planting projects to upgrade your curb appeal.
-            </p>
-            <p class="service-note">Ask about bundled bed clean-up + mulch installation.</p>
+            <p>Fresh mulch, seasonal flowers, shrubs, and small planting projects to upgrade your curb appeal.</p>
+            <p class="service-note">Ask about bundled bed clean-up plus mulch installation.</p>
           </article>
 
           <article class="service-card">
             <h3>Seasonal Clean-Ups</h3>
-            <p>
-              Spring prep, fall leaf removal, and storm debris clean-ups so your yard is ready for the next season.
-            </p>
+            <p>Spring prep, fall leaf removal, and storm debris clean-ups so your yard is ready for the next season.</p>
             <p class="service-note">One-time or recurring seasonal visits available.</p>
           </article>
 
           <article class="service-card">
             <h3>Shrub Trimming &amp; Pruning</h3>
-            <p>
-              Shape, health, and curb appeal for shrubs, hedges, and small trees with careful trimming and pruning.
-            </p>
+            <p>Shape, health, and curb appeal for shrubs, hedges, and small trees with careful trimming and pruning.</p>
           </article>
 
           <article class="service-card">
             <h3>Small Hardscape Projects</h3>
-            <p>
-              Edging, borders, stepping stone paths, and simple patio accents that add structure and function.
-            </p>
+            <p>Edging, borders, stepping stone paths, and simple patio accents that add structure and function.</p>
           </article>
         </div>
 
@@ -178,27 +176,22 @@
         <div class="features-grid">
           <article class="feature-card">
             <h3>Reliable &amp; On Time</h3>
-            <p>
-              We show up when we say we will, with clear communication before and after each visit.
-            </p>
+            <p>We show up when we say we will, with clear communication before and after each visit.</p>
           </article>
+
           <article class="feature-card">
             <h3>Licensed &amp; Insured</h3>
-            <p>
-              Professional, fully insured service so you can feel confident about who’s working on your property.
-            </p>
+            <p>Professional, fully insured service so you can feel confident about who’s working on your property.</p>
           </article>
+
           <article class="feature-card">
             <h3>Clean, Detailed Work</h3>
-            <p>
-              Sharp edges, tidy beds, and thorough clean-ups. Your yard looks better when we leave than when we arrived.
-            </p>
+            <p>Sharp edges, tidy beds, and thorough clean-ups. Your yard looks better when we leave than when we arrived.</p>
           </article>
+
           <article class="feature-card">
             <h3>Satisfaction Guaranteed</h3>
-            <p>
-              If something isn’t right, we’ll make it right. We’re not finished until you’re happy with the results.
-            </p>
+            <p>If something isn’t right, we’ll make it right. We’re not finished until you’re happy with the results.</p>
           </article>
         </div>
       </div>
@@ -237,7 +230,6 @@
         </header>
 
         <div class="gallery-grid">
-          <!-- Replace image paths with your own before/after shots -->
           <figure class="gallery-item">
             <img src="images/gallery-1.jpg" alt="Before and after photo of a cleaned and mulched flower bed" />
           </figure>
@@ -270,26 +262,20 @@
         <div class="testimonials-grid">
           <article class="testimonial-card">
             <p class="stars" aria-hidden="true">★★★★★</p>
-            <p>
-              “GreenWave is incredibly reliable and our yard has never looked better. They handle everything and keep us updated.”
-            </p>
-            <p class="testimonial-name">Sarah M. &mdash; North Haven</p>
+            <p>“GreenWave is incredibly reliable and our yard has never looked better. They handle everything and keep us updated.”</p>
+            <p class="testimonial-name">Sarah M. - North Haven</p>
           </article>
 
           <article class="testimonial-card">
             <p class="stars" aria-hidden="true">★★★★★</p>
-            <p>
-              “They transformed our mulch beds in one day. Professional, efficient, and very respectful of our property.”
-            </p>
-            <p class="testimonial-name">David R. &mdash; Wallingford</p>
+            <p>“They transformed our mulch beds in one day. Professional, efficient, and very respectful of our property.”</p>
+            <p class="testimonial-name">David R. - Wallingford</p>
           </article>
 
           <article class="testimonial-card">
             <p class="stars" aria-hidden="true">★★★★★</p>
-            <p>
-              “Fair pricing, great communication, and a yard we’re proud to come home to. We use them every season.”
-            </p>
-            <p class="testimonial-name">Kate L. &mdash; New Haven</p>
+            <p>“Fair pricing, great communication, and a yard we’re proud to come home to. We use them every season.”</p>
+            <p class="testimonial-name">Kate L. - New Haven</p>
           </article>
         </div>
       </div>
@@ -300,40 +286,41 @@
       <div class="container contact-inner">
         <div class="contact-copy">
           <h2>Get a Free Quote</h2>
-          <p>
-            Tell us a little about your property and what you’re looking for.
-            We’ll follow up with a clear, no-obligation estimate.
-          </p>
+          <p>Tell us a little about your property and what you’re looking for. We’ll follow up with a clear, no-obligation estimate.</p>
+
           <div class="contact-details">
             <p><strong>Prefer to call?</strong></p>
-            <!-- Replace phone number with real one -->
             <p><a href="tel:+12035550123" class="contact-phone">Call (203) 555-0123</a></p>
             <p class="small-muted">Serving homeowners throughout New Haven County.</p>
           </div>
         </div>
 
         <form class="contact-form" action="#" method="post">
-          <!-- You can point action to Formspree or another handler -->
           <div class="form-row">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
           </div>
+
           <div class="form-row">
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required />
           </div>
+
           <div class="form-row">
             <label for="phone">Phone</label>
             <input id="phone" name="phone" type="tel" />
           </div>
+
           <div class="form-row">
             <label for="location">City / Town</label>
             <input id="location" name="location" type="text" />
           </div>
+
           <div class="form-row">
             <label for="services-needed">What can we help with?</label>
             <textarea id="services-needed" name="services_needed" rows="4" placeholder="Lawn care, clean-up, mulching, planting, etc." required></textarea>
           </div>
+
           <button type="submit" class="btn btn-primary btn-full">Request My Free Quote</button>
         </form>
       </div>
@@ -367,25 +354,25 @@
 
   <script>
     // Mobile nav toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-    navToggle.addEventListener('click', () => {
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
-      navToggle.setAttribute('aria-expanded', !expanded);
-      navLinks.classList.toggle('nav-open');
-    });
+    if (navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        const expanded = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!expanded));
+        navLinks.classList.toggle("nav-open");
+      });
 
-    // Close nav when clicking a link (mobile)
-    navLinks.addEventListener('click', (e) => {
-      if (e.target.tagName === 'A' && navLinks.classList.contains('nav-open')) {
-        navLinks.classList.remove('nav-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
+      navLinks.addEventListener("click", (e) => {
+        if (e.target.tagName === "A" && navLinks.classList.contains("nav-open")) {
+          navLinks.classList.remove("nav-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
 
-    // Set current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
