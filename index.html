@@ -231,24 +231,36 @@
         </header>
 
         <div class="gallery-grid">
+         <figure class="gallery-item">
+  <img src="images/mulch.png" alt="Cleaned and mulched flower bed after refresh" />
+  <figcaption>Mulch bed clean-up</figcaption>
+</figure>
+
           <figure class="gallery-item">
-            <img src="images/mulch.png" alt="Before and after photo of a cleaned and mulched flower bed" />
-          </figure>
+  <img src="images/lawn.jpg" alt="Weekly mowing with striping" />
+  <figcaption>Weekly mowing with striping</figcaption>
+</figure>
+
           <figure class="gallery-item">
-            <img src="images/lawn.jpg" alt="Freshly mowed lawn with neat striping pattern" />
-          </figure>
+  <img src="images/shrubs.png" alt="Shrub trimming and shaping" />
+  <figcaption>Shrub trimming and shaping</figcaption>
+</figure>
+
           <figure class="gallery-item">
-            <img src="images/shrubs.png" alt="Shrubs neatly trimmed along a front walkway" />
-          </figure>
+  <img src="images/patio.png" alt="Patio edging and new plantings" />
+  <figcaption>Patio edging and new plantings</figcaption>
+</figure>
+
           <figure class="gallery-item">
-            <img src="images/patio.png" alt="Backyard patio area with new edging and plantings" />
-          </figure>
+  <img src="images/stone.png" alt="Stone border installation" />
+  <figcaption>Stone border installation</figcaption>
+</figure>
+
           <figure class="gallery-item">
-            <img src="images/stone.png" alt="Mulch and stone border defining a garden bed" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="images/leaf.jpg" alt="Clean fall leaf removal from a yard" />
-          </figure>
+  <img src="images/leaf.jpg" alt="Fall leaf removal" />
+  <figcaption>Fall leaf removal</figcaption>
+</figure>
+
         </div>
       </div>
     </section>
@@ -375,6 +387,17 @@
     }
 
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const header = document.querySelector(".site-header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+    header.classList.add("is-scrolled");
+  } else {
+    header.classList.remove("is-scrolled");
+  }
+});
+
   </script>
 
   <script>
