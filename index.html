@@ -62,19 +62,20 @@
   <div class="hero-overlay">
     <div class="container">
       <div class="hero-content">
-        <h1>Reliable Landscaping in New Haven County</h1>
-        <p>Lawn care, clean-ups, and landscape improvements done right.</p>
+        <h1>Landscaping Done Right</h1>
+<p>Reliable lawn care and outdoor services across New Haven County</p>
 
         <div class="hero-cta-group">
-          <a href="#contact" class="btn btn-primary">Request a Free Estimate</a>
-          <a href="#services" class="btn btn-outline">View Services</a>
-        </div>
+  <a href="#contact" class="btn btn-primary">Request a Free Estimate</a>
+  <a href="#services" class="btn btn-secondary">View Services</a>
+</div>
 
-        <div class="hero-badges">
-          <span>✔ Licensed &amp; Insured</span>
-          <span>✔ Reliable Scheduling</span>
-          <span>✔ Satisfaction Guaranteed</span>
-        </div>
+<div class="hero-badges">
+  <span>✔ Licensed &amp; Insured</span>
+  <span>✔ Reliable Scheduling</span>
+  <span>✔ Satisfaction Guaranteed</span>
+</div>
+
       </div>
     </div>
   </div>
@@ -329,8 +330,9 @@
     <!-- FINAL CTA BAND -->
     <section class="section section-final-cta">
       <div class="container final-cta-inner">
-        <h2>Ready to Refresh Your Yard?</h2>
-        <p>Get a fast, free quote from a licensed and insured local landscaping team.</p>
+        <h1>Landscaping Done Right</h1>
+<p>Reliable lawn care and outdoor services across New Haven County</p>
+
         <a href="#contact" class="btn btn-light">Get a Free Quote</a>
       </div>
     </section>
@@ -374,5 +376,29 @@
 
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
+  <script>
+  const sections = document.querySelectorAll("main section[id]");
+  const navLinksAll = document.querySelectorAll(".nav-links a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinksAll.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
